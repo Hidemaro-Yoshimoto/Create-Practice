@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useReducer } from "react";
 
-function App() {
+import reducer from "./reducers/index";
+
+import "./css/App.css"
+
+import Title from "./components/Title";
+import InputForm from "./components/InputForm";
+import Todos from "./components/Todos"
+
+const App = () => {
+  const [state, dispatch] = useReducer(reducer, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Title />
+      <InputForm state={state} dispatch={dispatch} />
+      <Todos state={state} dispatch={dispatch} />
     </div>
   );
-}
+};
 
 export default App;

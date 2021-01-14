@@ -1,0 +1,99 @@
+.margin-top-min {
+  margin-top: 10px;
+}
+
+.margin-top-md {
+  margin-top: 40px;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* inputForm */
+
+.text-input {
+  display: flex;
+  margin: 5px 10px;
+}
+
+.form-title {
+  width: 90px;
+  height: 30px;
+  display: block;
+  font-size: 15px;
+  color: #666;
+}
+
+.input:focus {
+  box-shadow: 0 0 7px #9fb2d6;
+  border: 1px solid #9fb2d6;
+}
+
+.form-container {
+  margin: 0 auto;
+  width: 400px;
+  height: 160px;
+  padding: 10px 20px;
+}
+
+.no-todo {
+  margin: 40px;
+  color: rgb(208, 24, 24);
+}
+
+.delete-button {
+  background-color: red;
+  border: 3px outset red;
+  cursor: pointer;
+  color: white;
+}
+
+.create-button {
+  background-color: blue;
+  border: 3px outset blue;
+  color: white;
+  cursor: pointer;
+}
+
+:disabled{
+  background:#6e5e5e74;
+  border: 3px solid #6e5e5e74;
+  cursor: default;
+}
+
+
+/* app */
+.container {
+  margin: 30px;
+  text-align: center;
+  padding: 20px;
+  max-width: 850px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+
+
+/* todos */
+.todos {
+  display: flex;
+  flex-direction: column;
+}
+
+.todos-table {
+  margin: 0 auto;
+}
+
+.table-el {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.delete-button {
+  background-color: red;
+  border: 3px outset red;
+  color: white;
+}
