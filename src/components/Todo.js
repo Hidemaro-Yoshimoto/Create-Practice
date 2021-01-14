@@ -1,12 +1,11 @@
 import React from "react";
-import { DELETE_TODO } from "../actions/index"
-
+import { DELETE_TODO } from "../actions/index";
 
 const Todos = ({ todo, dispatch }) => {
   const id = todo.id;
   const deleteButton = () => {
-    const result = window.confirm(`(id: ${id})を本当に削除してもいいですか？`)
-    if(result) dispatch({ type: DELETE_TODO, id })
+    const result = window.confirm(`(id: ${id})を本当に削除してもいいですか？`);
+    if (result) dispatch({ type: DELETE_TODO, id });
   };
   return (
     <tr key={id}>
