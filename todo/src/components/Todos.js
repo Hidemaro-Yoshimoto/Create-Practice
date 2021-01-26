@@ -1,5 +1,4 @@
 import React from "react";
-git
 import Todo from "./Todo";
 
 const Todos = ({ state, dispatch }) => {

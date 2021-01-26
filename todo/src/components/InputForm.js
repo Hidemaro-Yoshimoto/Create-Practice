@@ -41,7 +41,7 @@ const InputForm = ({ state, dispatch }) => {
   return (
     <>
       <div className="form-container">
-        <div className="text-input">
+        <div className="input">
           <label className="form-title" htmlFor="formTitle">
             タイトル
           </label>
@@ -56,7 +56,7 @@ const InputForm = ({ state, dispatch }) => {
           ></input>
         </div>
 
-        <div className="text-input">
+        <div className="input">
           <label className="form-title" htmlFor="formDeteil">
             詳細/メモ
           </label>
@@ -70,7 +70,7 @@ const InputForm = ({ state, dispatch }) => {
           ></input>
         </div>
 
-        <div className="text-input">
+        <div className="input">
           <label className="form-title" htmlFor="formDate">
             期日
           </label>
@@ -84,7 +84,7 @@ const InputForm = ({ state, dispatch }) => {
           ></input>
         </div>
 
-        <div className="text-input">
+        <div className="input">
           <span className="form-title">優先度</span>
           <div>
             <input
