@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { CREATE_TODO, DELETE_ALL_TODOS } from "../actions/index";
 
-import "../css/App.css";
-
 const InputForm = ({ state, dispatch }) => {
   const [title, setTitle] = useState("");
   const [deteil, setDeteil] = useState("");
