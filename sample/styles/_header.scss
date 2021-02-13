@@ -1,0 +1,160 @@
+.header {
+  height: 70px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(199, 194, 194, 0.4);
+}
+
+.company-logo {
+  font-size: 30px;
+  padding-left: 30px;
+
+  & > a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      transition: color 0.3s;
+      color: rgb(170, 170, 170);
+    }
+  }
+}
+
+.hd-nav {
+  padding-right: 30px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-left: 30px;
+
+    & > a {
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        transition: color 0.3s;
+        color: rgb(170, 170, 170);
+      }
+    }
+  }
+
+  @include sp() {
+    &__hambuger {
+      width: 40px;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: all 0.7s;
+
+      &__line-top {
+        height: 2px;
+        background-color: black;
+        transition: transform 0.6s;
+        transform: translateY(0) rotate(0);
+      }
+      &__line-middle {
+        height: 2px;
+        background-color: black;
+        transition: transform 0.6s;
+        transform: translateY(0) rotate(0);
+      }
+      &__line-bottom {
+        height: 2px;
+        background-color: black;
+        transition: transform 0.6s;
+        transform: translateY(0) rotate(0);
+      }
+    }
+
+    &__list {
+      display: none;
+    }
+  }
+}
+
+.clicked-ham-menu {
+  position: absolute;
+  top: 100px;
+  right: 200px;
+  box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+
+  & .hd-nav__hambuger {
+    &__line-top {
+      transition: transform 0.6s;
+      transform: translateY(13px) rotate(135deg);
+    }
+    &__line-middle {
+      transition: transform 0.6s;
+      transform: translateX(-18px) scaleX(0);
+    }
+    &__line-bottom {
+      transition: transform 0.6s;
+      transform: translateY(-13px) rotate(-135deg);
+    }
+  }
+}
+
+.back-menu {
+  transition: all 0.6s;
+  height: 100%;
+  width: 170px;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: -1;
+
+  & .company {
+    margin-bottom: 25px;
+    font-size: 30px;
+    text-align: center;
+
+    & > a {
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        transition: color 0.3s;
+        color: rgb(170, 170, 170);
+      }
+    }
+  }
+
+  .menu {
+    &__item {
+      margin-bottom: 15px;
+      text-align: center;
+      border-bottom: rgb(199, 194, 194);
+
+      & > a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+
+        &:hover {
+          color: gray;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  z-index: 10;
+}
+
+.cover {
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  z-index: 200;
+}

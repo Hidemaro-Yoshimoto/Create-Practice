@@ -1,0 +1,24 @@
+.deteils {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  background-position: center center;
+
+  &__1 {
+    background-image: url(../img/business-deteil__construction.jpg);
+    @extend .deteil-apply;
+    @extend .deteil-item;
+  }
+
+  &__2 {
+    background-image: url(../img/business-deteil__house.jpg);
+    @extend .deteil-apply;
+    @extend .deteil-item;
+  }
+
+  &__3 {
+    background-image: url(../img/business-deteil__farm.jpg);
+    @extend .deteil-apply;
+    @extend .deteil-item;
+  }
+}

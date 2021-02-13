@@ -1,0 +1,43 @@
+.first-view {
+  background-image: url(../img/first-view.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+.fv-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 400px;
+  margin: 0 auto;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.fv-catch {
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+.fv-btn {
+  @extend .btn;
+  position: absolute;
+  bottom: 0;
+  right: 17px;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

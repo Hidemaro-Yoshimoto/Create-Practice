@@ -1,0 +1,38 @@
+.initiatives {
+  background-image: url(../img/initiatives.jpg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  position: relative;
+
+  & > div {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+  }
+}
+
+.initiatives-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(237, 239, 241, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.initiatives-title {
+  font-size: 30px;
+  @extend .mb30;
+}
+
+.initiatives-explain {
+  width: 70%;
+  @extend .mb30;
+}
+
+.initiatives-btn {
+  @extend .btn;
+}

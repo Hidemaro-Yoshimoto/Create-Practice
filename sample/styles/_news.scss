@@ -1,0 +1,43 @@
+.news {
+  width: 100%;
+  padding: 30px;
+  background-color: rgb(47, 47, 47);
+  color: white;
+  text-align: center;
+  @extend .mb30;
+}
+
+.news-title {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  @extend .mb30;
+}
+
+.news-wrapper {
+  @extend .mb30;
+}
+
+.news-item {
+  text-align: center;
+  margin-bottom: 15px;
+
+  &__date {
+    font-size: 14px;
+    color: rgb(194, 194, 194);
+  }
+
+  &__explain {
+    & a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.news-list {
+  @extend .btn;
+  background-color: #fff;
+  color: black;
+}

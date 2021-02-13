@@ -1,0 +1,19 @@
+.catch-wrapper {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.catch-title {
+  font-size: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  @extend .mb30
+}
+
+.catch-text {
+  width: 70%;
+  font-size: 18px;
+}

@@ -1,0 +1,19 @@
+.access {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.access-title {
+  font-size: 30px;
+  padding: 30px;
+}
+
+.access-map {
+  & iframe {
+    border: 0;
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+    max-width: none;
+    width: 100vw;
+  }
+}
